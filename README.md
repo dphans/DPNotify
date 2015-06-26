@@ -2,7 +2,7 @@
 DPNotify used to send short notifications on screen simple &amp; quickly for iOS developing using Swift.
 
 # Preview
-![alt tag](https://github.com/dphans/DPNotify/blob/master/demo.gif?raw=true)
+![alt tag](https://github.com/dphans/DPNotify/blob/master/demo.gif)
 
 # Features
 - block syntax.
@@ -19,7 +19,6 @@ Just add file named DPNotify.swift to your project.
 - Show notify in self.view:
 ``` swift
 DPNotify.sharedNotify.showNotifyInView(view, title: "Awesome :P", dismissOnTap: true, notifyType: .DEFAULT)
-DPNotify.sharedNotify.showNotifyInView(view, title: "Angry emoticon :O", dismissOnTap: true, notifyType: .ERROR)
 ```
 
 - Completion handler:
