@@ -41,13 +41,13 @@ class DPNotify: NSObject {
     
     static let sharedNotify = DPNotify()
     
-    private var bannerBackgroundColor: UIColor!
-    private var bannerForegroundColor: UIColor!
-    private var tapToDismiss: Bool!
-    private var delayTimer: NSTimeInterval!
-    private var bannerType: DPNotifyType!
-    private var notifyTitle: String!
-    private var notifyTitleFont: UIFont!
+    var bannerBackgroundColor: UIColor! = UIColor(white: 0.2, alpha: 0.7)
+    var bannerForegroundColor: UIColor! = UIColor.whiteColor()
+    var tapToDismiss: Bool! = true
+    var delayTimer: NSTimeInterval! = 1.0
+    var bannerType: DPNotifyType! = .DEFAULT
+    var notifyTitle: String! = ""
+    var notifyTitleFont: UIFont! = UIFont.systemFontOfSize(17.0)
     private var bannerView: UIView!
     private var tapGesture: UITapGestureRecognizer?
     
@@ -62,8 +62,6 @@ class DPNotify: NSObject {
             self.bannerView.removeFromSuperview()
             self.bannerView = nil
         }
-        
-        self.applyDefaultType()
         
         self.notifyTitle = title
         self.tapToDismiss = dismissOnTap

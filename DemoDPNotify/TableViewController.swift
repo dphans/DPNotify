@@ -19,7 +19,8 @@ class TableViewController: UITableViewController {
         "Show with completion handler",
         "Dismiss",
         "Dismiss with completion handler",
-        "Show success delay: 1 second"
+        "Show success delay: 1 second",
+        "Custom banner"
     ]
 
     override func viewDidLoad() {
@@ -65,6 +66,11 @@ class TableViewController: UITableViewController {
                 alert.show()
             })
             case 8: DPNotify.sharedNotify.showNotifyInView(view, title: items[indexPath.row], dismissOnTap: false, notifyType: .SUCCESS, delay: 1.0)
+        case 9:
+            DPNotify.sharedNotify.bannerForegroundColor = DPNotify.sharedNotify.color(0x607D8B, alpha: 1)
+            DPNotify.sharedNotify.bannerBackgroundColor = UIColor(white: 0.8, alpha: 0.8)
+            DPNotify.sharedNotify.notifyTitleFont = UIFont(name: "Avenir", size: 17.0)
+            DPNotify.sharedNotify.showNotifyInView(view, title: items[indexPath.row], dismissOnTap: true)
             default: break
         }
     }
