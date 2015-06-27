@@ -6,6 +6,7 @@ DPNotify used to send short notifications on screen simple &amp; quickly for iOS
 
 # Features
 - block syntax.
+- delay timer.
 - 5 notify styles available (Default, Danger, Warning, Success, Disabled).
 - customize font & color.
 - tap to dismiss message.
