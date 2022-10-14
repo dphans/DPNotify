@@ -58,4 +58,4 @@ DPNotify.sharedNotify.showNotifyInView(view, title: "Hello, Dino Phan :D", dismi
 ```
 
 # Contact:
-Homepage: http://www.dinophan.com - Email: baophan94@icloud.com - Thanks to @ThanhHuong98.
+Homepage: https://www.dphans.me - Email: baophan94@icloud.com.
